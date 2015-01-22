@@ -416,13 +416,6 @@ module.controller('sliders', function SlidersController($scope, Sliders, Locatio
       $scope.sliders[f.name] = f.min;
     });
   });
-
-  $scope.dragControlListeners = {
-    accept: function (sourceItemHandleScope, destSortableScope) {return true},
-    itemMoved: function (event) {},
-    orderChanged: function(event) {},
-    containment: '#fields'
-  };
 });
 
 /* -------------------------------------------------------------------------- */

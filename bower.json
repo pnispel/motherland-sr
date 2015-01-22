@@ -1,19 +1,25 @@
 {
   "name": "motherland-sr",
   "version": "0.0.0",
+  "homepage": "https://github.com/pnispel/motherland-sr",
   "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "public/libs",
+    "./vendor",
     "test",
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "latest",
-    "font-awesome": "latest",
-    "angular": "latest",
-    "angular-resource": "latest"
+    "angular-resource": "*",
+    "angularjs-slider": "~0.1.6",
+    "angular-slider": "~0.2.14",
+    "bootstrap": "*",
+    "d3": "~3.5.3",
+    "font-awesome": "*",
+    "ng-sortable": "~1.1.9",
+    "underscore": "~1.7.0",
+    "ngSmoothScroll": "~1.7.1"
   }
 }
