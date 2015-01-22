@@ -1,0 +1,22 @@
+<!-- <input class="population-avg" type="range" ng-model="population_avg_factor"/>
+<input class="population-density-avg" type="range" ng-model="population_density_avg_factor"/>
+<input class="aqi-average" type="range" ng-model="aqi_average_factor"/>
+<input class="avg-salary" type="range" ng-model="avg_salary_factor"/>
+<input class="avg-unemployment" type="range" ng-model="avg_unemployment_factor"/>
+<input class="arrests" type="range" ng-model="arrests_factor"/> -->
+
+<ul class="fields" as-sortable="dragControlListeners" ng-model="interesting_fields">
+  <li ng-repeat="field in interesting_fields" as-sortable-item class="as-sortable-item">
+    <div class="index">{{$index + 1}}</div>
+    <!-- <div class="fa fa-bars" as-sortable-item-handle></div> -->
+    <div class="name">{{field.name_pretty}}
+      <br ng-if="field.reverse" />
+      <span ng-if="field.reverse" class="small">
+        lower is better
+      </span>
+    </div>
+    <rzslider rz-slider-floor="field.min" rz-slider-ceil="field.max" step="1" rz-slider-model="sliders[field.name]">
+      <div class="fin">data</div>
+    </rzslider>
+  </li>
+</ul>

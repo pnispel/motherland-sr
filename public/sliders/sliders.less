@@ -1,0 +1,87 @@
+.fields {
+  list-style-type: none;
+
+  li {
+    height: 50px;
+    padding: 7px 0px 7px 15px;
+
+    &:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    .index, .fa-bars {
+      font-size: 2em;
+      color: #cdcdcd;
+      width: 30px;
+    }
+
+    .index {
+      height: 100%;
+      margin-top: -6px;
+    }
+
+    .name {
+      font-size: 1.1em;
+      text-transform: uppercase;
+      color: #6cafd9;
+      width: 140px;
+      float: left;
+      margin-top: 3px;
+      line-height: 12px;
+
+      .small {
+        font-size: 50%;
+      }
+    }
+
+    div {
+      float: left;
+      width: 30px;
+    }
+  }
+}
+
+rzslider {
+  display: block;
+  position: relative;
+  height: 30px;
+  width: auto;
+  overflow: hidden;
+  margin: 0px;
+  margin-right: 16px;
+
+  span.bar {
+    background-color: #cdcdcd;
+    height: 4px;
+    margin-top: 18px;
+  }
+
+  span.bubble {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #99c5e3;
+  }
+
+  span.bubble.limit {
+    color: #99c5e3;
+  }
+
+  span.bubble:last-child {
+    left: 50% !important;
+  }
+
+  span.pointer {
+    width: 15px;
+    margin-top: 27px;
+    height: 15px;
+    background-color: #1a6fb7;
+
+    &:after {
+      top: 4px;
+      left: 4px;
+      content: '';
+      height: 0px;
+      width: 0px;
+    }
+  }
+}

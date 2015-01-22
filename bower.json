@@ -1,0 +1,19 @@
+{
+  "name": "motherland-sr",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "angular": "latest",
+    "angular-resource": "latest"
+  }
+}
